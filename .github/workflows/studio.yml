@@ -66,6 +66,9 @@ jobs:
       - name: Create .nuxtrc
         run: echo '\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
 
+      - run: ls ./
+      - run: cat .nuxtrc  
+
       - name: Generate
         run: npx nuxi generate
         env:
